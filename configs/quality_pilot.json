@@ -1,0 +1,13 @@
+{
+  "output": "runs/quality_pilot",
+  "mode": "centralized",
+  "dp": false,
+  "secure_aggregation": false,
+  "optimizer": "adam",
+  "learning_rate": 0.001,
+  "rounds": 50,
+  "min_rounds": 20,
+  "local_steps": 20,
+  "patience": 10,
+  "export_after_training": false
+}

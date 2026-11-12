@@ -1,0 +1,16 @@
+{
+  "output": "runs/improved_legacy",
+  "manifest": "data/manifest.json",
+  "public_checkpoint": "runs/public_legacy/public_init.pt",
+  "normalize": true,
+  "freeze_features": true,
+  "augment": true,
+  "optimizer": "sgd",
+  "learning_rate": 0.01,
+  "rounds": 30,
+  "min_rounds": 20,
+  "local_steps": 5,
+  "patience": 10,
+  "evaluate_test": false,
+  "export_after_training": false
+}

@@ -1,0 +1,18 @@
+{
+  "output": "runs/improved_seed42",
+  "manifest": "data/manifest_v2.json",
+  "public_checkpoint": "runs/public_v2/public_init.pt",
+  "normalize": true,
+  "freeze_features": true,
+  "augment": true,
+  "optimizer": "sgd",
+  "learning_rate": 0.001,
+  "rounds": 30,
+  "min_rounds": 20,
+  "local_steps": 5,
+  "patience": 10,
+  "evaluate_test": false,
+  "export_after_training": false,
+  "profile_path": "artifacts/profile_cpu_head.json",
+  "memory_headroom": 1.1
+}

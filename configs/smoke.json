@@ -1,0 +1,12 @@
+{
+  "output": "runs/smoke",
+  "rounds": 3,
+  "local_steps": 2,
+  "batch_size": 8,
+  "physical_batch_size": 4,
+  "patience": 3,
+  "availability": 1.0,
+  "dropout": 0.0,
+  "distill_epochs": 1,
+  "benchmark_iterations": 30
+}

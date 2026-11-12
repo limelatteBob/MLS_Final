@@ -1,0 +1,12 @@
+.venv/
+.venv_cpu/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+data/
+runs/
+artifacts/
+.cache/
+.tools/
+*.tmp
+temp_files/

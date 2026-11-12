@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fedcrop"
+version = "0.1.0"
+description = "Reproducible privacy-preserving crop classification systems study"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "torch>=2.6", "numpy>=1.26", "pillow>=10", "requests>=2.32",
+  "flwr==1.43.0", "opacus==1.6.0", "onnx>=1.17", "onnxruntime>=1.20",
+  "onnxscript>=0.3", "psutil>=6", "pandas>=2", "matplotlib>=3.8",
+  "streamlit>=1.40", "scikit-learn>=1.5"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pypdf>=5"]
+
+[project.scripts]
+fedcrop = "fedcrop.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fedcrop*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

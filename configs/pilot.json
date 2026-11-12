@@ -1,0 +1,9 @@
+{
+  "output": "runs/pilot_single",
+  "rounds": 8,
+  "local_steps": 10,
+  "batch_size": 16,
+  "patience": 5,
+  "target_f1": null,
+  "export_after_training": false
+}
